@@ -1,0 +1,108 @@
+Sending build context to Docker daemon  749.6kB
+Step 1/6 : FROM python:3.7.3-stretch
+ ---> 34a518642c76
+Step 2/6 : WORKDIR /app
+ ---> Using cache
+ ---> 15a1d0c96fa5
+Step 3/6 : COPY . app.py /app/
+ ---> 25c7543ec636
+Step 4/6 : RUN pip install --upgrade pip &&    pip install -r requirements.txt
+ ---> Running in 9cbd5658e5b9
+Collecting pip
+  Downloading https://files.pythonhosted.org/packages/00/b6/9cfa56b4081ad13874b0c6f96af8ce16cfbc1cb06bedf8e9164ce5551ec1/pip-19.3.1-py2.py3-none-any.whl (1.4MB)
+Installing collected packages: pip
+  Found existing installation: pip 19.1.1
+    Uninstalling pip-19.1.1:
+      Successfully uninstalled pip-19.1.1
+Successfully installed pip-19.3.1
+Collecting Flask
+  Downloading https://files.pythonhosted.org/packages/9b/93/628509b8d5dc749656a9641f4caf13540e2cdec85276964ff8f43bbb1d3b/Flask-1.1.1-py2.py3-none-any.whl (94kB)
+Collecting numpy
+  Downloading https://files.pythonhosted.org/packages/63/0c/0261693cc3ad8e2b66e66dc2d2676a2cc17d3efb1c58a70db73754320e47/numpy-1.18.1-cp37-cp37m-manylinux1_x86_64.whl (20.1MB)
+Collecting pandas
+  Downloading https://files.pythonhosted.org/packages/63/e0/a1b39cdcb2c391f087a1538bc8a6d62a82d0439693192aef541d7b123769/pandas-0.25.3-cp37-cp37m-manylinux1_x86_64.whl (10.4MB)
+Collecting scikit-learn
+  Downloading https://files.pythonhosted.org/packages/73/db/7d8204ddba84ab5d1e4fd1af8f82bbe39c589488bee71e45c662f4144010/scikit_learn-0.22.1-cp37-cp37m-manylinux1_x86_64.whl (7.0MB)
+Collecting pylint
+  Downloading https://files.pythonhosted.org/packages/e9/59/43fc36c5ee316bb9aeb7cf5329cdbdca89e5749c34d5602753827c0aa2dc/pylint-2.4.4-py3-none-any.whl (302kB)
+Collecting click>=5.1
+  Downloading https://files.pythonhosted.org/packages/fa/37/45185cb5abbc30d7257104c434fe0b07e5a195a6847506c074527aa599ec/Click-7.0-py2.py3-none-any.whl (81kB)
+Collecting Jinja2>=2.10.1
+  Downloading https://files.pythonhosted.org/packages/65/e0/eb35e762802015cab1ccee04e8a277b03f1d8e53da3ec3106882ec42558b/Jinja2-2.10.3-py2.py3-none-any.whl (125kB)
+Collecting Werkzeug>=0.15
+  Downloading https://files.pythonhosted.org/packages/ce/42/3aeda98f96e85fd26180534d36570e4d18108d62ae36f87694b476b83d6f/Werkzeug-0.16.0-py2.py3-none-any.whl (327kB)
+Collecting itsdangerous>=0.24
+  Downloading https://files.pythonhosted.org/packages/76/ae/44b03b253d6fade317f32c24d100b3b35c2239807046a4c953c7b89fa49e/itsdangerous-1.1.0-py2.py3-none-any.whl
+Collecting pytz>=2017.2
+  Downloading https://files.pythonhosted.org/packages/e7/f9/f0b53f88060247251bf481fa6ea62cd0d25bf1b11a87888e53ce5b7c8ad2/pytz-2019.3-py2.py3-none-any.whl (509kB)
+Collecting python-dateutil>=2.6.1
+  Downloading https://files.pythonhosted.org/packages/d4/70/d60450c3dd48ef87586924207ae8907090de0b306af2bce5d134d78615cb/python_dateutil-2.8.1-py2.py3-none-any.whl (227kB)
+Collecting joblib>=0.11
+  Downloading https://files.pythonhosted.org/packages/28/5c/cf6a2b65a321c4a209efcdf64c2689efae2cb62661f8f6f4bb28547cf1bf/joblib-0.14.1-py2.py3-none-any.whl (294kB)
+Collecting scipy>=0.17.0
+  Downloading https://files.pythonhosted.org/packages/dd/82/c1fe128f3526b128cfd185580ba40d01371c5d299fcf7f77968e22dfcc2e/scipy-1.4.1-cp37-cp37m-manylinux1_x86_64.whl (26.1MB)
+Collecting isort<5,>=4.2.5
+  Downloading https://files.pythonhosted.org/packages/e5/b0/c121fd1fa3419ea9bfd55c7f9c4fedfec5143208d8c7ad3ce3db6c623c21/isort-4.3.21-py2.py3-none-any.whl (42kB)
+Collecting mccabe<0.7,>=0.6
+  Downloading https://files.pythonhosted.org/packages/87/89/479dc97e18549e21354893e4ee4ef36db1d237534982482c3681ee6e7b57/mccabe-0.6.1-py2.py3-none-any.whl
+Collecting astroid<2.4,>=2.3.0
+  Downloading https://files.pythonhosted.org/packages/ad/ae/86734823047962e7b8c8529186a1ac4a7ca19aaf1aa0c7713c022ef593fd/astroid-2.3.3-py3-none-any.whl (205kB)
+Collecting MarkupSafe>=0.23
+  Downloading https://files.pythonhosted.org/packages/98/7b/ff284bd8c80654e471b769062a9b43cc5d03e7a615048d96f4619df8d420/MarkupSafe-1.1.1-cp37-cp37m-manylinux1_x86_64.whl
+Collecting six>=1.5
+  Downloading https://files.pythonhosted.org/packages/65/26/32b8464df2a97e6dd1b656ed26b2c194606c16fe163c695a992b36c11cdf/six-1.13.0-py2.py3-none-any.whl
+Collecting wrapt==1.11.*
+  Downloading https://files.pythonhosted.org/packages/23/84/323c2415280bc4fc880ac5050dddfb3c8062c2552b34c2e512eb4aa68f79/wrapt-1.11.2.tar.gz
+Collecting typed-ast<1.5,>=1.4.0; implementation_name == "cpython" and python_version < "3.8"
+  Downloading https://files.pythonhosted.org/packages/fb/56/dd4e168a0009da85c78c6cfe91f5b2df2c7bbed60f3ba778c4a71289e6fb/typed_ast-1.4.0-cp37-cp37m-manylinux1_x86_64.whl (736kB)
+Collecting lazy-object-proxy==1.4.*
+  Downloading https://files.pythonhosted.org/packages/23/f8/69df5a663b59512eb9f9b84e7f203c48c7a933e460316e9ebf4db2871ae0/lazy_object_proxy-1.4.3-cp37-cp37m-manylinux1_x86_64.whl (56kB)
+Building wheels for collected packages: wrapt
+  Building wheel for wrapt (setup.py): started
+  Building wheel for wrapt (setup.py): finished with status 'done'
+  Created wheel for wrapt: filename=wrapt-1.11.2-cp37-cp37m-linux_x86_64.whl size=71297 sha256=e1127b9399bb10b0306bc3d8c886dca71502abbe557c395c89e62aee26375ae2
+  Stored in directory: /root/.cache/pip/wheels/d7/de/2e/efa132238792efb6459a96e85916ef8597fcb3d2ae51590dfd
+Successfully built wrapt
+Installing collected packages: click, MarkupSafe, Jinja2, Werkzeug, itsdangerous, Flask, numpy, pytz, six, python-dateutil, pandas, joblib, scipy, scikit-learn, isort, mccabe, wrapt, typed-ast, lazy-object-proxy, astroid, pylint
+Successfully installed Flask-1.1.1 Jinja2-2.10.3 MarkupSafe-1.1.1 Werkzeug-0.16.0 astroid-2.3.3 click-7.0 isort-4.3.21 itsdangerous-1.1.0 joblib-0.14.1 lazy-object-proxy-1.4.3 mccabe-0.6.1 numpy-1.18.1 pandas-0.25.3 pylint-2.4.4 python-dateutil-2.8.1 pytz-2019.3 scikit-learn-0.22.1 scipy-1.4.1 six-1.13.0 typed-ast-1.4.0 wrapt-1.11.2
+Removing intermediate container 9cbd5658e5b9
+ ---> 99a75cf8ac03
+Step 5/6 : EXPOSE 80
+ ---> Running in c96509fc8ec8
+Removing intermediate container c96509fc8ec8
+ ---> f4f76b4c235c
+Step 6/6 : CMD ["python", "app.py"]
+ ---> Running in ceafde818c4e
+Removing intermediate container ceafde818c4e
+ ---> c177ff15c65a
+Successfully built c177ff15c65a
+Successfully tagged api:latest
+REPOSITORY                           TAG                 IMAGE ID            CREATED                  SIZE
+api                                  latest              c177ff15c65a        Less than a second ago   1.27GB
+<none>                               <none>              55408db616ba        24 minutes ago           1.27GB
+<none>                               <none>              6a9735bff3cb        28 minutes ago           930MB
+<none>                               <none>              98b943a628dc        30 minutes ago           930MB
+<none>                               <none>              1e24e76b7a78        30 minutes ago           930MB
+<none>                               <none>              3bdbadf6aa05        31 minutes ago           930MB
+<none>                               <none>              e87be9415b5f        33 minutes ago           930MB
+<none>                               <none>              f294af3c2456        36 minutes ago           930MB
+<none>                               <none>              2638e8f3111b        39 minutes ago           930MB
+<none>                               <none>              34d1511ca90f        39 minutes ago           930MB
+<none>                               <none>              8cdc82460c89        40 minutes ago           930MB
+<none>                               <none>              c19c286e82d9        49 minutes ago           930MB
+<none>                               <none>              67a05da55260        2 hours ago              930MB
+k8s.gcr.io/kube-apiserver            v1.14.8             1e94481e8f30        3 months ago             209MB
+k8s.gcr.io/kube-controller-manager   v1.14.8             36a8001a79fd        3 months ago             158MB
+k8s.gcr.io/kube-scheduler            v1.14.8             f1e3e5f9f93e        3 months ago             81.6MB
+k8s.gcr.io/kube-proxy                v1.14.8             849af609e0c6        3 months ago             82.1MB
+python                               3.7.3-stretch       34a518642c76        7 months ago             929MB
+docker/kube-compose-controller       v0.4.23             a8c3d87a58e7        7 months ago             35.3MB
+docker/kube-compose-api-server       v0.4.23             f3591b2cb223        7 months ago             49.9MB
+k8s.gcr.io/coredns                   1.3.1               eb516548c180        12 months ago            40.3MB
+k8s.gcr.io/etcd                      3.3.10              2c4adeb21b4f        13 months ago            258MB
+k8s.gcr.io/pause                     3.1                 da86e6ba6ca1        2 years ago              742kB
+ * Serving Flask app "app" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: on
