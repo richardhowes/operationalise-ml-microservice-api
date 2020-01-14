@@ -5,13 +5,13 @@
 
 # Step 1:
 # Create dockerpath
-dockerpath="richardhowes/api"
+dockerpath="richardhowes/udacity-prediction:v0.1"
 
 # Step 2:  
 # Authenticate & tag
 echo "Docker ID and Image: $dockerpath"
 docker login
-docker image tag api $dockerpath
+docker image tag udacity-prediction $dockerpath
 
 # Step 3:
 # Push image to a docker repository
