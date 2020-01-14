@@ -33,6 +33,16 @@ You can find a detailed [project rubric, here](https://review.udacity.com/#!/rub
 1. Standalone:  `python app.py`
 2. Run in Docker:  `./run_docker.sh`
 3. Run in Kubernetes:  `./run_kubernetes.sh`
+4. Run a prediction: `./make_prediction.sh` 
+
+Point 4 confirms the system is working and should have output simlar to this: 
+```Port: 8000
+{
+  "prediction": [
+    20.35373177134412
+  ]
+}
+``` 
 
 ### Kubernetes Steps
 
@@ -40,3 +50,23 @@ You can find a detailed [project rubric, here](https://review.udacity.com/#!/rub
 * Setup and Configure Kubernetes locally
 * Create Flask app in Container
 * Run via kubectl
+
+### Project Files
+
+1. `Dockerfile` : builds the docker image.
+
+2. `app.py` : The the simple test flask app
+
+3. `make_prediction.sh` : runs a query against the machine learning API.
+
+4. `requirements.txt` : python application dependencies.
+
+5. `run_docker.sh` : builds and runs the docker image.
+
+6. `upload_docker.sh`: upload the docker image to the docker hub.
+
+7. `run_kubernetes.sh` : downloads the docker image from the docker hub and run this image locally on a kubernetes cluster.
+
+8. `model_data` : machine learning data prerequisites.
+
+9. `./output_txt_files` : the output from `run_docker.sh`: docker_out.txt, and `run_kubernetes.sh`: kubernetes_out.txt.
